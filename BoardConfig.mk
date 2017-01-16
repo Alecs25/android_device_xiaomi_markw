@@ -16,7 +16,7 @@ ARCH_ARM_HAVE_TLS_REGISTER := true
 TARGET_BOOTLOADER_BOARD_NAME := markw
 
 BOARD_KERNEL_CMDLINE := 
-BOARD_KERNEL_BASE := 0x
+BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 
 
 # fix this up by examining /proc/mtd on a running device
