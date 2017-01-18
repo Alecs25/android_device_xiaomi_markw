@@ -7,9 +7,9 @@ $(call inherit-product-if-exists, vendor/xiaomi/markw/markw-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/xiaomi/markw/overlay
 
-
+LOCAL_PATH := device/xiaomi/markw/prebuilt
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := device/xiaomi/markw/kernel
+	LOCAL_KERNEL := device/xiaomi/markw/prebuilt/kernel
 else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
